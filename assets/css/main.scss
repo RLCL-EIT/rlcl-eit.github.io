@@ -692,47 +692,82 @@ h1:before, .anchor:before {
 }
 
 
-.lab-alumni-list {
-  display: grid;
-  gap: 12px;
+/* People page layout overrides */
+.lab-person-group {
+  padding: 0;
+  margin-bottom: 52px;
+  border: 0;
+  background: transparent;
 }
 
-.lab-alumni-item {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
+.lab-person-group h2 {
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+  border-bottom: 0;
+  font-size: 1.38rem;
+}
+
+.lab-person-group .lab-empty-state {
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+.lab-people-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 34px 38px;
+}
+
+.lab-people-grid--pi {
+  grid-template-columns: 1fr;
+}
+
+.lab-person-card {
+  grid-template-columns: 116px minmax(0, 1fr);
   gap: 18px;
-  padding: 20px;
-  border: 1px solid var(--lab-line);
-  border-radius: 8px;
-  background: var(--lab-surface);
+  min-height: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
 }
 
-.lab-alumni-item h3 {
-  margin: 0 0 6px;
-  color: var(--lab-ink);
-  font-size: 1.1rem;
+.lab-people-grid--pi .lab-person-card {
+  grid-template-columns: 150px minmax(0, 1fr);
+  max-width: 860px;
 }
 
-.lab-alumni-item p {
-  margin: 0 0 8px;
+.lab-person-card__photo {
+  width: 116px;
+  height: auto;
+  max-height: none;
+  aspect-ratio: auto;
+  align-self: start;
+  object-fit: contain;
+  object-position: top center;
+  border-radius: 6px;
+  background: transparent;
 }
 
-.lab-alumni-item__meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px 14px;
-  justify-content: flex-end;
-  align-content: start;
-  color: var(--lab-muted);
-  font-weight: 800;
+.lab-people-grid--pi .lab-person-card__photo {
+  width: 150px;
 }
 
-@media (max-width: 640px) {
-  .lab-alumni-item {
+@media (max-width: 760px) {
+  .lab-people-grid,
+  .lab-people-grid--pi {
     grid-template-columns: 1fr;
   }
+}
 
-  .lab-alumni-item__meta {
-    justify-content: flex-start;
+@media (max-width: 560px) {
+  .lab-person-card,
+  .lab-people-grid--pi .lab-person-card {
+    grid-template-columns: 86px minmax(0, 1fr);
+  }
+
+  .lab-person-card__photo,
+  .lab-people-grid--pi .lab-person-card__photo {
+    width: 86px;
   }
 }

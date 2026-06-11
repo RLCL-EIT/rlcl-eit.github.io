@@ -8,9 +8,6 @@ main_en:
   - id: people
     title: "People"
     url: "/people/"
-  - id: alumni
-    title: "Alumni"
-    url: "/alumni/"
   - id: publications
     title: "Publications"
     url: "/publications/"
@@ -40,9 +37,6 @@ main_zh:
   - id: people
     title: "团队成员"
     url: "/cn/people/"
-  - id: alumni
-    title: "校友"
-    url: "/cn/alumni/"
   - id: publications
     title: "论文成果"
     url: "/cn/publications/"

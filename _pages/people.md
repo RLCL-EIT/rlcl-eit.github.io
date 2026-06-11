@@ -18,7 +18,7 @@ description: "Members of the Robot Learning and Control Lab."
     <section class="lab-person-group" id="{{ group.id }}">
       <h2>{{ group.title_en }}</h2>
       {% if group.members and group.members.size > 0 %}
-        <div class="lab-people-grid">
+        <div class="lab-people-grid lab-people-grid--{{ group.id }}">
           {% for member in group.members %}
             <article class="lab-person-card">
               {% if member.photo %}

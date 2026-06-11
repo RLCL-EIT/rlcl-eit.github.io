@@ -18,7 +18,7 @@ description: "机器人学习与控制实验室团队成员。"
     <section class="lab-person-group" id="{{ group.id }}">
       <h2>{{ group.title_zh }}</h2>
       {% if group.members and group.members.size > 0 %}
-        <div class="lab-people-grid">
+        <div class="lab-people-grid lab-people-grid--{{ group.id }}">
           {% for member in group.members %}
             <article class="lab-person-card">
               {% if member.photo %}
