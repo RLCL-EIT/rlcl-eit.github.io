@@ -26,7 +26,6 @@ description: "机器人学习与控制实验室团队成员。"
               {% endif %}
               <div class="lab-person-card__body">
                 <h3>{{ member.name_zh | default: member.name_en }}</h3>
-                <p class="lab-muted">{{ member.role_zh | default: member.role_en }}</p>
                 {% if member.research_zh %}<p>{{ member.research_zh }}</p>{% elsif member.research_en %}<p>{{ member.research_en }}</p>{% endif %}
                 <div class="lab-person-card__links">
                   {% if member.email %}<a class="lab-text-link" href="mailto:{{ member.email }}">{{ member.email }}</a>{% endif %}

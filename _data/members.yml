@@ -6,8 +6,6 @@ groups:
     members:
       - name_en: "Xiaocong Li"
         name_zh: "李晓聪"
-        role_en: "Principal Investigator"
-        role_zh: "负责人"
         email: "xiaocongli@eitech.edu.cn"
         photo: "/images/people/xiaocong-li.jpg"
         research_en: "Intersection of control, machine learning, and robotics, particularly in learning-based robot control and manipulation."
@@ -35,8 +33,6 @@ groups:
     members:
       - name_en: "Xuqi Su"
         name_zh: "苏煦祺"
-        role_en: "PhD Student"
-        role_zh: "博士研究生"
         email: "xqsu@eitech.edu.cn"
         photo: "/images/people/suxiq-su.png"
         research_en: "Robot learning, manipulation, and control."

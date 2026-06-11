@@ -26,7 +26,6 @@ description: "Members of the Robot Learning and Control Lab."
               {% endif %}
               <div class="lab-person-card__body">
                 <h3>{{ member.name_en }}</h3>
-                <p class="lab-muted">{{ member.role_en }}</p>
                 {% if member.research_en %}<p>{{ member.research_en }}</p>{% endif %}
                 <div class="lab-person-card__links">
                   {% if member.email %}<a class="lab-text-link" href="mailto:{{ member.email }}">{{ member.email }}</a>{% endif %}
