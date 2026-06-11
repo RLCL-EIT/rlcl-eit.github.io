@@ -1,0 +1,14 @@
+{% assign lab = site.data.lab %}
+<footer class="lab-footer">
+  <div class="lab-footer__inner">
+    <div>
+      <strong>{% if page.lang == 'zh' %}{{ lab.name_zh }}{% else %}{{ lab.name_en }}{% endif %}</strong>
+      <p>{% if page.lang == 'zh' %}{{ lab.tagline_zh }}{% else %}{{ lab.tagline_en }}{% endif %}</p>
+    </div>
+    <div class="lab-footer__meta">
+      <span>{% if page.lang == 'zh' %}{{ lab.address_zh }}{% else %}{{ lab.address_en }}{% endif %}</span>
+      {% if lab.contact_email %}<a href="mailto:{{ lab.contact_email }}">{{ lab.contact_email }}</a>{% endif %}
+      <a href="{{ lab.github_url }}">GitHub</a>
+    </div>
+  </div>
+</footer>

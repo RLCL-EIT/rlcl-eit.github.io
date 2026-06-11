@@ -1,0 +1,12 @@
+name_en: "Robot Learning and Control Lab"
+name_zh: "机器人学习与控制实验室"
+short_name: "RLCL"
+affiliation_en: "EIT"
+affiliation_zh: "EIT"
+tagline_en: "Robot learning, control, planning, and embodied intelligence."
+tagline_zh: "面向机器人学习、控制、规划与具身智能的研究。"
+hero_image: "/images/hero-lab.jpg"
+contact_email:
+address_en: "Address to be updated"
+address_zh: "地址待更新"
+github_url: "https://github.com/rlcl-eit"

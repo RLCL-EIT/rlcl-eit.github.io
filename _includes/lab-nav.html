@@ -1,0 +1,32 @@
+{% assign lab = site.data.lab %}
+{% if page.lang == 'zh' %}
+  {% assign nav_links = site.data.navigation.main_zh %}
+  {% assign brand_name = lab.name_zh %}
+  {% assign lang_url = page.en_url | default: '/' %}
+  {% assign lang_label = 'English' %}
+{% else %}
+  {% assign nav_links = site.data.navigation.main_en %}
+  {% assign brand_name = lab.name_en %}
+  {% assign lang_url = page.zh_url | default: '/cn/' %}
+  {% assign lang_label = '中文' %}
+{% endif %}
+
+<header class="lab-header">
+  <div class="lab-header__inner">
+    <a class="lab-brand" href="{% if page.lang == 'zh' %}{{ '/cn/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}" aria-label="{{ brand_name }}">
+      <span class="lab-brand__mark">{{ lab.short_name }}</span>
+      <span class="lab-brand__text">{{ brand_name }}</span>
+    </a>
+    <button class="lab-nav-toggle" type="button" aria-controls="lab-nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav id="lab-nav" class="lab-nav" aria-label="Primary navigation">
+      {% for link in nav_links %}
+        <a class="lab-nav__link{% if page.nav_id == link.id %} is-active{% endif %}" href="{{ link.url | relative_url }}">{{ link.title }}</a>
+      {% endfor %}
+      <a class="lab-nav__link lab-nav__lang" href="{{ lang_url | relative_url }}">{{ lang_label }}</a>
+    </nav>
+  </div>
+</header>

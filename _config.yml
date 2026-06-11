@@ -6,9 +6,9 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Xuqi Su (苏煦祺)"
-description              : "Robot Learning, Robot Control, Planning "
-repository               : "CodenSxq/codensxq.github.io"
+title                    : "Robot Learning and Control Lab"
+description              : "Robot learning, control, planning, and embodied intelligence research."
+repository               : "rlcl-eit/rlcl-eit.github.io"
 google_scholar_stats_use_cdn : true
 
 # google analytics
@@ -21,9 +21,9 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 
 # Site Author
 author:
-  name             : "Xuqi Su (苏煦祺)"
+  name             : "Robot Learning and Control Lab"
   avatar           : "images/profile.jpg"
-  bio              : "SJTU and EIT"
+  bio              : "Research in robot learning, control, and planning."
   location         : "Shanghai, China"
   employer         :
   pubmed           : 
@@ -125,7 +125,7 @@ defaults:
       type: pages
     values:
       layout: default
-      author_profile: true
+      author_profile: false
 
 
 # Sass/SCSS

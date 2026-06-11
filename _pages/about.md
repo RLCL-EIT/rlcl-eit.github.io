@@ -1,66 +1,101 @@
 ---
+layout: lab
 permalink: /
-title: ""
-excerpt: ""
-author_profile: true
-redirect_from: 
-  - /about/
-  - /about.html
+title: "Home"
+lang: en
+nav_id: home
+zh_url: /cn/
+description: "Robot Learning and Control Lab homepage."
 ---
+{% assign lab = site.data.lab %}
 
-{% if site.google_scholar_stats_use_cdn %}
-{% assign gsDataBaseUrl = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: "@" %}
-{% else %}
-{% assign gsDataBaseUrl = "https://raw.githubusercontent.com/" | append: site.repository | append: "/" %}
-{% endif %}
-{% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
+<section class="lab-hero" style="--hero-image: url('{{ lab.hero_image | relative_url }}');">
+  <div class="lab-hero__inner">
+    <p class="lab-kicker">{{ lab.affiliation_en }} · Robot Learning · Control</p>
+    <h1>{{ lab.name_en }}</h1>
+    <p>{{ lab.tagline_en }} We build learning-enabled robotic systems that reason, plan, and act reliably in the physical world.</p>
+    <div class="lab-actions">
+      <a class="lab-button lab-button--primary" href="{{ '/research/' | relative_url }}">Explore Research</a>
+      <a class="lab-button lab-button--ghost" href="{{ '/join/' | relative_url }}">Join Us</a>
+    </div>
+  </div>
+</section>
 
-<span class='anchor' id='about-me'></span>
+<section class="lab-section lab-section--tight">
+  <div class="lab-section__head">
+    <div>
+      <p class="lab-eyebrow">Research Focus</p>
+      <h2>Methods for capable, reliable robots.</h2>
+    </div>
+    <p>Our site is being built as a public-safe, data-driven lab homepage. Content will be expanded as approved information becomes available.</p>
+  </div>
+  <div class="lab-grid">
+    {% for item in site.data.research limit:3 %}
+      <article class="lab-card">
+        <h3>{{ item.title_en }}</h3>
+        <p>{{ item.summary_en }}</p>
+        <div class="lab-tags">
+          {% for tag in item.tags limit:3 %}<span>{{ tag }}</span>{% endfor %}
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</section>
 
-I am now working on Robot Learning and Control for Manipulator. If you are seeking any form of **academic cooperation**, please feel free to email me at [suxuqi.stg@gmail.com](mailto:suxuqi.stg@gmail.com).
+<section class="lab-section">
+  <div class="lab-section__head">
+    <div>
+      <p class="lab-eyebrow">Featured Publications</p>
+      <h2>Selected public results.</h2>
+    </div>
+    <a class="lab-text-link" href="{{ '/publications/' | relative_url }}">View all publications</a>
+  </div>
+  <div class="lab-grid lab-grid--two">
+    {% for paper in site.data.publications_manual.featured limit:2 %}
+      <article class="lab-publication">
+        <img src="{{ paper.image | relative_url }}" alt="Publication thumbnail">
+        <div>
+          <h3>{{ paper.title }}</h3>
+          <p class="lab-muted">{{ paper.authors }}</p>
+          <p><strong>{{ paper.venue }}</strong> · {{ paper.year }}</p>
+          <div class="lab-publication__links">
+            {% if paper.links.paper %}<a class="lab-text-link" href="{{ paper.links.paper }}">Paper</a>{% endif %}
+          </div>
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</section>
 
-Now, I am pursuing a PhD in Control Science and Engineering from [School of Automation and Intelligent Sensing](http://47.97.252.37:8205/), Shanghai Jiao Tong University (上海交通大学自动化与感知学院), supervised by [Hesheng Wang (王贺生)](https://irmv.sjtu.edu.cn/wanghesheng) and [Xiaocong Li (李晓聪)](https://sites.google.com/view/xiaocong-li). I graduated from [School of Aeronautics and Astronautics](https://www.aero.sjtu.edu.cn/en), Shanghai Jiao Tong University (上海交通大学航空航天学院) with a Master's degree and [School of Automation](https://soa.csu.edu.cn/English/Introduction/Introduction.htm), Central South University (中南大学自动化学院) with a Bachelor’s degree.
+<section class="lab-section">
+  <div class="lab-section__head">
+    <div>
+      <p class="lab-eyebrow">Latest News</p>
+      <h2>Recent updates.</h2>
+    </div>
+    <a class="lab-text-link" href="{{ '/news/' | relative_url }}">News archive</a>
+  </div>
+  <div class="lab-news-list">
+    {% for item in site.data.news limit:5 %}
+      <article class="lab-news-item">
+        <div class="lab-news-date">{{ item.date | date: "%b %-d, %Y" }}</div>
+        <div>
+          <h3>{{ item.title_en }}</h3>
+          <p class="lab-muted">{{ item.type }}</p>
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</section>
 
-<!--My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>).-->
-
-
-# 🔥 News
-<!-- - *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. -->
-- *2025.10*: A volunteer for [IROS 2025](https://iros25.org/).
-
-# 📝 Publications 
-
-<!--
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Deep Residual Learning for Image Recognition](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
-
-**Kaiming He**, Xiangyu Zhang, Shaoqing Ren, Jian Sun
-
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-</div>
-</div>
--->
-
-- <span class="pub-badge">IEEE SMC 2024</span>[Stackelberg-Nash Game-Theoretic Formation Path Planning for Multi-Agent Interactions](https://ieeexplore.ieee.org/abstract/document/10831214), **Xuqi Su**, Zhaohui Yang, et al.
-- <span class="pub-badge">EAAI</span>[Three-stage multi-objective optimization approach based on sparsity knowledge for multi-airship earth-observation task scheduling](https://www.sciencedirect.com/science/article/abs/pii/S0952197623014744), **Xuqi Su**, Yuhao Jing, et al.
-
-# 🎖 Honors and Awards
-- ***2025.03*** Outstanding Graduates, SJTU (Top 10%)
-- ***2024.10*** National Scholarship (Top 1%)
-- ***2022.06*** Outstanding Graduates, CSU and Hunan (Top 10%)
-- ***2021.08*** National Second Price, "NXP Cup" Smart Car Competition (Top 3%)
-
-# 📖 Educations
-- ***2025.09 - now***, PhD, Shanghai Jiao Tong University, Shanghai.
-- ***2022.06 - 2025.03***, Master, Shanghai Jiao Tong University, Shanghai. 
-- ***2018.09 - 2022.06***, Bachelor, Central South University, Changsha. 
-
-# 💬 Invited Talks
-<!-- - *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/) -->
-
-# 💻 Internships
-- ***2025.08 - 2025.09***, [RLC Lab](https://sites.google.com/view/xiaocong-li), EIT.
-- ***2023.07 - 2023.12***, [BoChu](https://www.bochu.com/en/), Shanghai.
+<section class="lab-callout">
+  <div class="lab-section">
+    <p class="lab-eyebrow">Open Collaboration</p>
+    <h2>We welcome students and collaborators interested in robot learning and control.</h2>
+    <p>Recruiting details and contact information will be updated after public release approval.</p>
+    <div class="lab-actions">
+      <a class="lab-button lab-button--primary" href="{{ '/people/' | relative_url }}">Meet the Team</a>
+      <a class="lab-button lab-button--ghost" href="{{ '/contact/' | relative_url }}">Contact</a>
+    </div>
+  </div>
+</section>

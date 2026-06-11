@@ -1,0 +1,21 @@
+groups:
+  - id: pi
+    title_en: "Principal Investigator"
+    title_zh: "负责人"
+    members: []
+  - id: faculty
+    title_en: "Faculty and Research Staff"
+    title_zh: "教师与科研人员"
+    members: []
+  - id: phd
+    title_en: "PhD Students"
+    title_zh: "博士研究生"
+    members: []
+  - id: master
+    title_en: "Master Students"
+    title_zh: "硕士研究生"
+    members: []
+  - id: alumni
+    title_en: "Alumni"
+    title_zh: "校友"
+    members: []

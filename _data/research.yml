@@ -1,0 +1,36 @@
+- id: robot-learning
+  title_en: "Robot Learning"
+  title_zh: "机器人学习"
+  summary_en: "Learning reusable robot skills from interaction, demonstrations, and feedback, with an emphasis on policies that transfer beyond a single setup."
+  summary_zh: "研究机器人如何从交互、示教和反馈中学习可复用技能，并提升策略在不同场景中的泛化能力。"
+  tags:
+    - "Reinforcement Learning"
+    - "Imitation Learning"
+    - "Sim-to-Real"
+- id: control-planning
+  title_en: "Control and Planning"
+  title_zh: "控制与规划"
+  summary_en: "Model-based and learning-based methods for reliable motion generation, feedback control, and long-horizon task execution."
+  summary_zh: "结合模型驱动与学习驱动方法，研究可靠运动生成、反馈控制和长时程任务执行。"
+  tags:
+    - "Motion Planning"
+    - "Optimal Control"
+    - "Safety"
+- id: manipulation
+  title_en: "Robotic Manipulation"
+  title_zh: "机器人操作"
+  summary_en: "Dexterous manipulation, tool use, and contact-rich control for robots operating in real physical environments."
+  summary_zh: "面向真实物理环境中的灵巧操作、工具使用和富接触控制问题开展研究。"
+  tags:
+    - "Manipulation"
+    - "Contact"
+    - "Perception"
+- id: embodied-ai
+  title_en: "Embodied Intelligence"
+  title_zh: "具身智能"
+  summary_en: "Agents that connect perception, memory, language, and action to solve tasks in open-ended environments."
+  summary_zh: "构建融合感知、记忆、语言与动作的具身智能体，用于开放环境中的任务求解。"
+  tags:
+    - "Embodied AI"
+    - "Multimodal Models"
+    - "Autonomy"

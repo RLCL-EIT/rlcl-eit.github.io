@@ -1,0 +1,21 @@
+featured:
+  - title: "Stackelberg-Nash Game-Theoretic Formation Path Planning for Multi-Agent Interactions"
+    authors: "Xuqi Su, Zhaohui Yang, et al."
+    venue: "IEEE SMC 2024"
+    year: 2024
+    image: "/images/500x300.png"
+    links:
+      paper: "https://ieeexplore.ieee.org/abstract/document/10831214"
+    tags:
+      - "Multi-Agent Planning"
+      - "Game Theory"
+  - title: "Three-stage multi-objective optimization approach based on sparsity knowledge for multi-airship earth-observation task scheduling"
+    authors: "Xuqi Su, Yuhao Jing, et al."
+    venue: "Engineering Applications of Artificial Intelligence"
+    year: 2023
+    image: "/images/500x300.png"
+    links:
+      paper: "https://www.sciencedirect.com/science/article/abs/pii/S0952197623014744"
+    tags:
+      - "Optimization"
+      - "Scheduling"
