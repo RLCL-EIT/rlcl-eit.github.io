@@ -1,3 +1,4 @@
+# Public-safe team data only. Do not add private notes, phone numbers, or internal status.
 groups:
   - id: pi
     title_en: "Principal Investigator"
@@ -7,32 +8,53 @@ groups:
         name_zh: "李晓聪"
         role_en: "Principal Investigator"
         role_zh: "负责人"
-        email: "xiaocongli@eitech.edu.cn."
+        email: "xiaocongli@eitech.edu.cn"
         photo: "/images/people/xiaocong-li.jpg"
-        research_en: "Intersection of control, machine learning, and robotics, particularly in learning-based robot control and manipulation"
+        research_en: "Intersection of control, machine learning, and robotics, particularly in learning-based robot control and manipulation."
         research_zh: "控制、机器学习和机器人技术的交叉，特别是基于学习的机器人控制和操作。"
         homepage: "https://sites.google.com/view/xiaocong-li"
-        
+        education_en:
+          - "B.Eng. from National University of Singapore"
+          - "Ph.D., from National University of Singapore"
+          - "Postdoctoral Fellow, from Harvard University"
+          - "Scientist, from Agency for Science, Technology and Research (A*STAR), Singapore"
+        education_zh:
+          - "新加坡国立大学学士"
+          - "新加坡国立大学博士"
+          - "哈佛大学博士后"
+          - "新加坡科技研究局科学家"
+
   - id: post-doctor
-    title_en: "Postdoctor"
+    title_en: "Postdocs"
     title_zh: "博士后"
-    members: 
-    
+    members: []
+
   - id: phd
     title_en: "PhD Students"
     title_zh: "博士研究生"
-    members: 
+    members:
       - name_en: "Xuqi Su"
         name_zh: "苏煦祺"
         role_en: "PhD Student"
         role_zh: "博士研究生"
         email: "xqsu@eitech.edu.cn"
-        photo: "/images/people/xuqi-su.png"
+        photo: "/images/people/suxiq-su.png"
         research_en: "Robot learning, manipulation, and control."
         research_zh: "机器人学习、操作与控制。"
         homepage: "https://codensxq.github.io/"
-        
+        education_en:
+          - "M.Eng. from Shanghai Jiao Tong University"
+          - "B.Eng. from Central South University"
+        education_zh:
+          - "上海交通大学硕士"
+          - "中南大学学士"
+
   - id: master
     title_en: "Master Students"
     title_zh: "硕士研究生"
+    members: []
+
+  - id: alumni
+    title_en: "Alumni"
+    title_zh: "校友"
     members: []
