@@ -2,20 +2,37 @@ groups:
   - id: pi
     title_en: "Principal Investigator"
     title_zh: "负责人"
-    members: []
-  - id: faculty
-    title_en: "Faculty and Research Staff"
-    title_zh: "教师与科研人员"
-    members: []
+    members:
+      - name_en: "Xiaocong Li"
+        name_zh: "李晓聪"
+        role_en: "Principal Investigator"
+        role_zh: "负责人"
+        email: "xiaocongli@eitech.edu.cn."
+        photo: "/images/people/xiaocong-li.jpg"
+        research_en: "Intersection of control, machine learning, and robotics, particularly in learning-based robot control and manipulation"
+        research_zh: "控制、机器学习和机器人技术的交叉，特别是基于学习的机器人控制和操作。"
+        homepage: "https://sites.google.com/view/xiaocong-li"
+        
+  - id: post-doctor
+    title_en: "Postdoctor"
+    title_zh: "博士后"
+    members: 
+    
   - id: phd
     title_en: "PhD Students"
     title_zh: "博士研究生"
-    members: []
+    members: 
+      - name_en: "Xuqi Su"
+        name_zh: "苏煦祺"
+        role_en: "PhD Student"
+        role_zh: "博士研究生"
+        email: "xqsu@eitech.edu.cn"
+        photo: "/images/people/xuqi-su.png"
+        research_en: "Robot learning, manipulation, and control."
+        research_zh: "机器人学习、操作与控制。"
+        homepage: "https://codensxq.github.io/"
+        
   - id: master
     title_en: "Master Students"
     title_zh: "硕士研究生"
-    members: []
-  - id: alumni
-    title_en: "Alumni"
-    title_zh: "校友"
     members: []
